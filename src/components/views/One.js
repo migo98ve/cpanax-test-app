@@ -35,9 +35,9 @@ function One() {
         getProducts()
     }, []);
 
-    const indexOfLastPost = currentPage * prodsPerPage;
-    const indexOfFirstPost = indexOfLastPost - prodsPerPage;
-    const currentProds = products.slice(indexOfFirstPost, indexOfLastPost);
+    const indexOfLastProds = currentPage * prodsPerPage;
+    const indexOfFirstProds = indexOfLastProds - prodsPerPage;
+    const currentProds = products.slice(indexOfFirstProds, indexOfLastProds);
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
